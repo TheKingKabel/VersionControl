@@ -20,7 +20,8 @@ namespace UserMaintenance
             InitializeComponent();
             label1.Text = Resource1.FullName;
             button1.Text = Resource1.Add;
-            button2.Text = Resource1.Save_File;
+            button2.Text = Resource1.SaveFile;
+            button3.Text = Resource1.Delete;
 
             listBox1.DataSource = users;
             listBox1.ValueMember = "ID";
@@ -59,6 +60,19 @@ namespace UserMaintenance
                     }
                 }
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string y = listBox1.SelectedValue.ToString();
+
+            var törlendő = (from x in users
+                                     where x.ID.ToString() == y
+                                     select x);
+
+  
+
+            users.Remove(törlendő.FirstOrDefault());
         }
     }
 }
