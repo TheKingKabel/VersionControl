@@ -123,7 +123,7 @@
   <data name="FullName" xml:space="preserve">
     <value>Teljes név</value>
   </data>
-  <data name="Save File" xml:space="preserve">
+  <data name="SaveFile" xml:space="preserve">
     <value>Fájlbaírás</value>
   </data>
 </root>

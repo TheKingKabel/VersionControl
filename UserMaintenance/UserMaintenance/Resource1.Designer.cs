@@ -81,9 +81,9 @@ namespace UserMaintenance {
         /// <summary>
         ///   Looks up a localized string similar to Fájlbaírás.
         /// </summary>
-        internal static string Save_File {
+        internal static string SaveFile {
             get {
-                return ResourceManager.GetString("Save File", resourceCulture);
+                return ResourceManager.GetString("SaveFile", resourceCulture);
             }
         }
     }
